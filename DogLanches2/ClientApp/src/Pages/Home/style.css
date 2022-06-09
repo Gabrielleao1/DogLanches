@@ -1,0 +1,89 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.card-right img {
+    width: 300px;
+}
+
+.card-left {
+    width: 550px;
+}
+
+.card-left-content h1 {
+    font-weight: 700;
+}
+
+.btn-hamburguer {
+    background-color: #5dbea3;
+    border: 1px solid #5dbea3;
+    border-radius: 5px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.btn-hamburguer h6 {
+    color: #FFF;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+@media (max-width: 770px) {
+    .card  {
+        padding: 40px;
+    }
+    .card-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-right img {
+        width: 200px;
+    }
+
+    .card-left-content h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .card-left-content h3 {
+        font-weight: 600;
+    }
+
+    .card-left-content h3, .card-left-content p {
+        font-size: 1.0rem;
+    }
+    
+}
+
+@media (max-width: 560px) {
+    .card {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-left, .card-left-content {
+        width: 100%;
+    }
+
+    .card-right {
+        width: 50%;
+    }
+
+    .card-right img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
