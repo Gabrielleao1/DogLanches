@@ -2,10 +2,9 @@ import * as React from 'react';
 import { useState, useEffect } from 'react';
 import { CheckCircle, Trash2 } from 'react-feather';
 import Modal from '../../components/Modal';
-import ModalExcluir from '../../components/ModalExcluir-Ingrediente/index';
+import ModalExcluirIngrediente from '../../components/ModalExcluir-Ingrediente/index';
 import axios from "axios";
 import './style.css';
-import ModalExcluirIngrediente from '../../components/ModalExcluir-Ingrediente/index';
 
 const Ingrediente = () => {
   const [isModalVisible, setIsmodalVisible] = useState(false);
