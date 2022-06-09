@@ -21,7 +21,7 @@ const CadastrarIngredientes = ({ id = 'modalIngredientes', onClose = () => { } }
             headers: {
                 'Content-Type': 'application/json'
             },
-            data: data
+            data: data 
         };
     
         axios(config)
@@ -48,7 +48,7 @@ const CadastrarIngredientes = ({ id = 'modalIngredientes', onClose = () => { } }
                         <input id="name" type="text" placeholder='Nome' /><br />
                         <label>Valor:</label>
                         <input id="price" type="number" placeholder='Valor' /><br />
-                        <button type="submit" onClick={sent}>Salvar</button>
+                        <button className='btn-salvar' type="submit" onClick={sent}>Salvar</button>
                     </div>
                 </div>
             </div>

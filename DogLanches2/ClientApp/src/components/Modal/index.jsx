@@ -14,13 +14,11 @@ const Modal = ({ id = 'modal', onClose = () => { } }) => {
                 <div className='content'>
                     <h1>Atualize as informações</h1>
                     <div className='modal-form'>
-                        <form action="" method="post">
-                            <label>Nome:</label>
-                            <input type="text" placeholder='Nome:' /><br />
-                            <label>Valor:</label>
-                            <input type="number" placeholder='Valor'/><br />
-                            <button type="submit">Atualizar</button> 
-                        </form>
+                        <label>Nome:</label>
+                        <input id="name" type="text" placeholder='Nome:' /><br />
+                        <label>Valor:</label>
+                        <input id="price" type="number" placeholder='Valor' /><br />
+                        <button className='btn-atualizar' type="submit">Atualizar</button>
                     </div>
                 </div>
             </div>
