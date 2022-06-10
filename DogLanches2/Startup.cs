@@ -95,18 +95,32 @@ namespace DogLanches
             Ingrediente ingre2 = new Ingrediente()
             {
                 id = 2,
-                name = "Tomate",
-                price = 0.80
+                name = "Bacon",
+                price = 2.00
             };
             Ingrediente ingre3 = new Ingrediente()
             {
                 id = 3,
                 name = "Alface",
-                price = 0.80
+                price = 0.40
+            };
+            Ingrediente ingre4 = new Ingrediente()
+            {
+                id = 4,
+                name = "Hamburguer de carne",
+                price = 3.00
+            };
+            Ingrediente ingre5 = new Ingrediente()
+            {
+                id = 3,
+                name = "Queijo",
+                price = 1.50
             };
             context.Ingredientes.Add(ingre1);
             context.Ingredientes.Add(ingre2);
             context.Ingredientes.Add(ingre3);
+            context.Ingredientes.Add(ingre4);
+            context.Ingredientes.Add(ingre5);
             context.SaveChanges();
         }
 
@@ -117,25 +131,33 @@ namespace DogLanches
                 id = 1,
                 name = "X-Bacon",
                 imgUrl = "../../assets/images/lanche1.png",
-                ingrediente = "Bacon"
+                ingrediente = "Bacon, hambúrguer de carne e queijo"
             };
             Burguer burguer2 = new Burguer()
             {
                 id = 2,
-                name = "X-Salada",
+                name = "X-Burger",
                 imgUrl = "../../assets/images/lanche2.png",
-                ingrediente = "Alface"
+                ingrediente = "Hambúrguer de carne e queijo"
             };
             Burguer burguer3 = new Burguer()
             {
                 id = 3,
-                name = "X-Ovo",
+                name = "X-Egg",
                 imgUrl = "../../assets/images/lanche1.png",
-                ingrediente = "ovo"
+                ingrediente = "Ovo, hambúrguer de carne e queijo"
+            };
+            Burguer burguer4 = new Burguer()
+            {
+                id = 4,
+                name = "X-Egg Bacon",
+                imgUrl = "../../assets/images/lanche1.png",
+                ingrediente = "Ovo, bacon, hambúrguer de carne e queijo"
             };
             context.Burguers.Add(burguer1);
             context.Burguers.Add(burguer2);
             context.Burguers.Add(burguer3);
+            context.Burguers.Add(burguer4);
             context.SaveChanges();
         }
     }

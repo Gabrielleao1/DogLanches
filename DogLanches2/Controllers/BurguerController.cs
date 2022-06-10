@@ -73,9 +73,14 @@ namespace DogLanches.Controllers
                 bg.imgUrl = burguer.imgUrl;
             }
 
+            if (bg.ingrediente != null)
+            {
+                bg.ingrediente = burguer.ingrediente;
+            }
+
             _context.Update(bg);
             _context.SaveChanges();
-            return Ok("Hamburguer criado com sucesso");
+            return Ok("Hamburguer atualizado com sucesso!");
         }
     }
 }

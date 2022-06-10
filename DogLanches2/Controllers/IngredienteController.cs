@@ -74,7 +74,7 @@ namespace DogLanches.Controllers
 
             _context.Update(ig);
             _context.SaveChanges();
-            return Ok("Ingrediente criado com sucesso");
+            return Ok("Ingrediente atualizado com sucesso!");
         }
     }
 }
